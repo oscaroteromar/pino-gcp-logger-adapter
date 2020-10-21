@@ -1,14 +1,11 @@
 {
-  "ts-node": {
-    "transpileOnly": true
-  },
   "compilerOptions": {
     /* Basic Options */
     "target": "es5",
     "module": "commonjs",
     "lib": ["es2019"],
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": "dist",
     "sourceMap": false,
 
     /* Strict Type-Checking Options */

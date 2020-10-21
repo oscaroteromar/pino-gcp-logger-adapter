@@ -1,23 +1,24 @@
 {
   "name": "pino-gcp-logger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/logger.js",
   "types": "dist/logger.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cleanup": "",
+    "cleanup": "rm -rf dist",
+    "prepublish": "npm run build",
+    "prebuild": "npm run cleanup",
     "build": "tsc"
   },
   "keywords": [],
   "author": "guillenotfound <guille@codetogether.dev>",
   "license": "ISC",
   "dependencies": {
-    "pino": "^6.7.0"
+    "pino": "^6.7.0",
+    "pino-pretty": "^4.3.0"
   },
   "devDependencies": {
     "@types/pino": "^6.3.3",
-    "pino-pretty": "^4.3.0",
     "typescript": "^4.0.3"
   }
 }

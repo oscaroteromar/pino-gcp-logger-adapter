@@ -65,3 +65,5 @@ export function createLogger(level: logLevel, isGCP: boolean, customConfig?: Log
 
   return pino(Object.assign({}, config, customConfig));
 }
+
+export { Logger, LoggerOptions } from 'pino';
