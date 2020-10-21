@@ -20,16 +20,6 @@ export function createLogger(level: logLevel, isGCP: boolean, customConfig?: Log
       translateTime: 'HH:MM',
     },
     base: null,
-    hooks: {
-      logMethod(inputArgs, method) {
-        if (inputArgs.length >= 2) {
-          const arg1 = inputArgs.shift();
-          const arg2 = inputArgs.shift();
-          return method.apply(this, [arg2, arg1, ...inputArgs]);
-        }
-        return method.apply(this, [inputArgs[0]]);
-      },
-    },
   };
 
   const productionPinoConfig: LoggerOptions = {
@@ -37,16 +27,6 @@ export function createLogger(level: logLevel, isGCP: boolean, customConfig?: Log
     prettyPrint: false,
     messageKey: 'message',
     base: null,
-    hooks: {
-      logMethod(inputArgs, method) {
-        if (inputArgs.length >= 2) {
-          const arg1 = inputArgs.shift();
-          const arg2 = inputArgs.shift();
-          return method.apply(this, [arg2, arg1, ...inputArgs]);
-        }
-        return method.apply(this, [inputArgs[0]]);
-      },
-    },
     formatters: {
       level(label: string, number: number) {
         return {
