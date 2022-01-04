@@ -8,12 +8,11 @@ Official documentation can be found [here](https://github.com/pinojs/pino/blob/m
 npm install pino-gcp-logger
 ```
 
-> If you use Typescript install `@types/pino` as well.
-
 ```ts
 import { createLogger, logLevel } from 'pino-gcp-logger';
 
 const defaultLevel: logLevel = 'info';
-const logger = createLogger('info', isGCP);
+const isGCP = true;
+const logger = createLogger(defaultLevel, isGCP);
 logger.info('Hello world', { extra: 'data' });
 ```
