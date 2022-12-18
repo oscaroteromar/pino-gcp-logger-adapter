@@ -1,6 +1,6 @@
 {
   "name": "pino-gcp-logger",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Pino logger with seamless GCP integration.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,7 +10,11 @@
     "prebuild": "npm run cleanup",
     "build": "tsc"
   },
-  "keywords": ["pino", "gcp", "logging"],
+  "keywords": [
+    "pino",
+    "gcp",
+    "logging"
+  ],
   "author": "guillenotfound <guillenotfound@gmail.com>",
   "license": "ISC",
   "devDependencies": {
