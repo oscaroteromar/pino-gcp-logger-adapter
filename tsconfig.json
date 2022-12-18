@@ -1,28 +1,16 @@
 {
   "compilerOptions": {
-    /* Basic Options */
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
-    "lib": ["es2019"],
-    "declaration": true,
-    "outDir": "dist",
-    "sourceMap": false,
+    "lib": ["es2016"],
 
-    /* Strict Type-Checking Options */
     "strict": true,
-
-    /* Additional Checks */
-    "noUnusedLocals": true,
-    "noImplicitReturns": true,
-
-    /* Module Resolution Options */
-    "moduleResolution": "node",
-
-    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
 
-    "skipLibCheck": true
+    "outDir": "lib",
+    "declaration": true
   },
-  "compileOnSave": true,
-  "include": ["./logger.ts"]
+  "include": ["src/*.ts"]
 }
