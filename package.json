@@ -1,5 +1,5 @@
 {
-  "name": "pino-gcp-logger",
+  "name": "pino-gcp-logger-adapter",
   "version": "0.0.1",
   "description": "Pino logger with seamless GCP integration (fork from guillenotfound/pino-gcp-logger).",
   "main": "lib/index.js",
@@ -24,5 +24,13 @@
     "npm-check-updates": "^17.1.14",
     "pino": "^9.6.0",
     "pino-pretty": "^13.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscaroteromar/pino-gcp-logger-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oscaroteromar/pino-gcp-logger-adapter/issues"
+  },
+  "homepage": "https://github.com/oscaroteromar/pino-gcp-logger-adapter#readme"
 }
