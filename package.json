@@ -1,6 +1,6 @@
 {
   "name": "pino-gcp-logger-adapter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pino logger with seamless GCP integration (fork from guillenotfound/pino-gcp-logger).",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
